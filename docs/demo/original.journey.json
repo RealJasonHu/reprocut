@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "name": "Express shipping + coupon crashes checkout",
+  "url": "http://127.0.0.1:54260/",
+  "setup": [],
+  "actions": [
+    {
+      "id": "search",
+      "type": "fill",
+      "selector": "#search",
+      "value": "ceramic",
+      "label": "Search for ceramic"
+    },
+    {
+      "id": "clear-search",
+      "type": "fill",
+      "selector": "#search",
+      "value": "",
+      "label": "Clear search"
+    },
+    {
+      "id": "favorite",
+      "type": "click",
+      "selector": "#favorite",
+      "label": "Save mug to favorites"
+    },
+    {
+      "id": "details",
+      "type": "click",
+      "selector": "#details",
+      "label": "Read product details"
+    },
+    {
+      "id": "dark-mode",
+      "type": "click",
+      "selector": "#theme",
+      "label": "Change theme"
+    },
+    {
+      "id": "express",
+      "type": "check",
+      "selector": "#express",
+      "label": "Choose express shipping"
+    },
+    {
+      "id": "newsletter",
+      "type": "check",
+      "selector": "#newsletter",
+      "label": "Join the newsletter"
+    },
+    {
+      "id": "coupon",
+      "type": "fill",
+      "selector": "#coupon",
+      "value": "SAVE10",
+      "label": "Enter coupon SAVE10"
+    },
+    {
+      "id": "gift",
+      "type": "check",
+      "selector": "#gift",
+      "label": "Add gift wrapping"
+    },
+    {
+      "id": "note",
+      "type": "fill",
+      "selector": "#note",
+      "value": "A gift for a friend",
+      "label": "Write a gift note"
+    },
+    {
+      "id": "light-mode",
+      "type": "click",
+      "selector": "#theme",
+      "label": "Change theme again"
+    },
+    {
+      "id": "checkout",
+      "type": "click",
+      "selector": "#checkout",
+      "label": "Place order"
+    }
+  ],
+  "failure": {
+    "type": "page-error",
+    "includes": "CHECKOUT_TOTAL_UNDEFINED"
+  },
+  "options": {
+    "actionTimeoutMs": 800,
+    "observeMs": 80,
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  }
+}

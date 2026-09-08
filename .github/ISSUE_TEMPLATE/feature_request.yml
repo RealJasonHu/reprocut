@@ -1,0 +1,16 @@
+name: Feature request
+description: Propose a concrete workflow improvement.
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What workflow is blocked?
+      description: Describe your app, journey and expected outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior and a small example
+    validations:
+      required: true

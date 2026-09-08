@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "name": "Express shipping + coupon crashes checkout",
+  "url": "http://127.0.0.1:54260/",
+  "setup": [],
+  "actions": [
+    {
+      "id": "express",
+      "type": "check",
+      "selector": "#express",
+      "label": "Choose express shipping"
+    },
+    {
+      "id": "coupon",
+      "type": "fill",
+      "selector": "#coupon",
+      "value": "SAVE10",
+      "label": "Enter coupon SAVE10"
+    },
+    {
+      "id": "checkout",
+      "type": "click",
+      "selector": "#checkout",
+      "label": "Place order"
+    }
+  ],
+  "failure": {
+    "type": "page-error",
+    "includes": "CHECKOUT_TOTAL_UNDEFINED"
+  },
+  "options": {
+    "actionTimeoutMs": 800,
+    "observeMs": 80,
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  }
+}

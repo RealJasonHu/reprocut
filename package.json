@@ -1,0 +1,26 @@
+{
+  "name": "@realjasonhu/reprocut",
+  "version": "0.1.0",
+  "description": "Shrink a failing browser journey into a verified reproducer and a runnable regression test.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "bin": { "reprocut": "./src/cli.js" },
+  "exports": { ".": "./src/index.js" },
+  "files": ["src", "examples", "README.md", "README.zh-CN.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:unit": "node --test test/journey.test.js test/reducer.test.js test/report.test.js",
+    "demo": "node src/cli.js demo",
+    "demo:serve": "node examples/server.js",
+    "check": "node --check src/cli.js && node --check src/runner.js && node --check src/reducer.js && node --check src/report.js",
+    "browsers": "playwright install chromium"
+  },
+  "dependencies": { "playwright": "1.63.0" },
+  "devDependencies": { "@playwright/test": "1.63.0" },
+  "repository": { "type": "git", "url": "https://github.com/RealJasonHu/reprocut.git" },
+  "bugs": { "url": "https://github.com/RealJasonHu/reprocut/issues" },
+  "homepage": "https://github.com/RealJasonHu/reprocut#readme",
+  "keywords": ["playwright", "debugging", "delta-debugging", "testing", "browser", "minimal-reproduction", "ai-agents"],
+  "license": "MIT",
+  "author": "Zhexun Hu"
+}
