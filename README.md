@@ -157,4 +157,4 @@ npm run check
 
 Good next contributions: journey recorder/importer, state-reset hooks, more failure predicates, and examples from real applications. Start with [CONTRIBUTING.md](CONTRIBUTING.md). If ReproCut helps isolate a bug, a small sanitized journey and a before/after count are more useful than an unsupported benchmark claim.
 
-MIT · Built by [Zhexun Hu](https://github.com/RealJasonHu)
+MIT · Built by [Jason Hu](https://github.com/RealJasonHu)
