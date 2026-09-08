@@ -79,4 +79,4 @@ v0.1.0 支持 Chromium、单页面、JSON 声明流程、七种操作和四种�
 
 欢迎提交真实且已脱敏的案例、录制/导入功能、状态重置方案与新的失败条件。开发与贡献指南见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-MIT · [Zhexun Hu](https://github.com/RealJasonHu)
+MIT · [Jason Hu](https://github.com/RealJasonHu)
