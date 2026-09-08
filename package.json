@@ -22,5 +22,5 @@
   "homepage": "https://github.com/RealJasonHu/reprocut#readme",
   "keywords": ["playwright", "debugging", "delta-debugging", "testing", "browser", "minimal-reproduction", "ai-agents"],
   "license": "MIT",
-  "author": "Zhexun Hu"
+  "author": "Jason Hu"
 }
